@@ -565,9 +565,9 @@ namespace Husky
                 {
                     // Set offset
                     Position = new Vector3(
-                        gfxVertexPosition.X * 2.54,
-                        gfxVertexPosition.Y * 2.54,
-                        gfxVertexPosition.Z * 2.54),
+                        gfxVertexPosition.X,
+                        gfxVertexPosition.Y,
+                        gfxVertexPosition.Z),
                     // Decode and set normal (from DTZxPorter - Wraith, same as XModels)
                     Normal = VertexNormalUnpacking.MethodB(gfxVertexNormal),
                     // Set UV

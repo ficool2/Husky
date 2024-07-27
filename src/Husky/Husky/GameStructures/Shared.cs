@@ -239,9 +239,9 @@ namespace Husky
         public float Y { get; set; }
         public float Z { get; set; }
 
-        public Vector3 ToCentimeter()
+        public Vector3 ToUnits()
         {
-            return new Vector3(X * 2.54, Y * 2.54, Z * 2.54);
+            return new Vector3(X, Y, Z);
         }
     }
 

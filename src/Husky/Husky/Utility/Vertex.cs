@@ -41,9 +41,9 @@ namespace Husky
         public static Vector3 UnpackVGVertex(ulong PackedPosition, float scale, float[] midPoint)
         {
             return new Vector3(
-                ((((PackedPosition >> 0) & 0x1FFFFF) * scale) + midPoint[0]) * 2.54,
-                ((((PackedPosition >> 21) & 0x1FFFFF) * scale) + midPoint[1]) * 2.54,
-                ((((PackedPosition >> 42) & 0x1FFFFF) * scale) + midPoint[2]) * 2.54);
+                ((((PackedPosition >> 0) & 0x1FFFFF) * scale) + midPoint[0]),
+                ((((PackedPosition >> 21) & 0x1FFFFF) * scale) + midPoint[1]),
+                ((((PackedPosition >> 42) & 0x1FFFFF) * scale) + midPoint[2]));
         }
     }
 }

@@ -197,7 +197,7 @@ namespace Husky
                         // Load Vertex Positions
                         TRZone.PositionBufferReader.BaseStream.Position = dataInfo.PositionsPosition;
                         for (int i = 0; i < surf.VertexCount; i++)
-                            obj.Vertices.Add(TRZone.PositionBufferReader.ReadStruct<GfxVertexPosition>().ToCentimeter());
+                            obj.Vertices.Add(TRZone.PositionBufferReader.ReadStruct<GfxVertexPosition>().ToUnits());
 
                         // Load Vertex Normals
                         TRZone.DrawDataBufferReader.BaseStream.Position = dataInfo.NormalQuatPosition;
